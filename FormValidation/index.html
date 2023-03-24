@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Form Validation</title>
+    <style>
+        body{
+            padding: 30px 500px;
+        }
+        
+        .Name{
+           font-size: 20px;
+           color: rgb(4, 23, 237);
+           border: green;
+           font-size: 20;
+        }
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Shafkat's form</h1>
+    <form action="/myaction.php" name="myform" onsubmit="return validateform()" method="post">
+       <div class="Name" id="namee">
+        Name:<input type="text" name="fname">
+        <span class="error">This is error</span>
+       </div>
+       <div class="Email" id="email">
+        Email:<input type="text" name="femail">
+        <span class="error">This is error</span>
+       </div>
+       <div class="Password" id="password">
+        Password:<input type="text" name="fpassword">
+        <span class="error">This is error</span>
+       </div>
+       <div class="But" id="button">
+        <input type="submit" name="fbutoon">   
+       </div>
+    </form>
+</body>
+<script>
+    function seterror(id,error)
+    {
+       element=document.getElementById(id);
+       element.getElementByClassname
+    }
+    function validateform()
+    {
+       var returnvalue=true;
+       var name=document.forms['myform']["fname"].value;
+       if(name.length<5)
+       {
+        seterror("namee","Name of length is too short");
+        returnvalue=false;
+       }
+       console.log(name);
+       return returnvalue;
+    }
+</script>
+</html>
