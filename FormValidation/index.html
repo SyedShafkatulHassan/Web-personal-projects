@@ -44,8 +44,9 @@
 <script>
     function seterror(id,error)
     {
-       element=document.getElementById(id);
-       element.getElementByClassname
+        element = document.getElementById(id);
+        element.getElementsByClassName('error')[0].innerHTML = error;
+
     }
     function validateform()
     {
