@@ -14,6 +14,17 @@ nav ul{
   background-color: black;
   color: aliceblue;
 }
+nav ul li{
+  padding: 0 12px;
+  
+}
 .brand img{
-  width: 50px;
+  width: 40;
+  padding: 0 12px;
+}
+.brand
+{
+  align-items: center;
+  display: flex;
+  font-weight: bold;
 }
