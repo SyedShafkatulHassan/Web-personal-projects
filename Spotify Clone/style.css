@@ -11,8 +11,8 @@ nav ul{
   list-style: none;
   align-items: center;
   height: 70px;
-  background-color: black;
-  color: aliceblue;
+  background-color: rgb(3, 38, 96);
+  color: rgb(255, 0, 43);
 }
 nav ul li{
   padding: 0 12px;
@@ -27,4 +27,27 @@ nav ul li{
   align-items: center;
   display: flex;
   font-weight: bold;
+}
+.icon{
+  margin-top: 10px;
+}
+.bottom{
+  position: sticky;
+  height: 130px;
+  background-color: rgb(34, 26, 26);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.Song{
+  min-height: 100px;
+}
+#progresBar{
+  width: 500px;
+  align-items: center;
+}
+.icon i{
+  cursor: cell;
 }
