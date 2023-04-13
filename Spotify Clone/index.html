@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
     <nav>
         <ul>
-           <li class="brand"><img src="spotify.jpg" alt="spotify"width=40>spotify</li>
-           <li>Home</li>
-           <li>about</li>
+            <li class="brand"><img src="spotify.jpg" alt="spotify" width=40>spotify</li>
+            <li>Home</li>
+            <li>about</li>
         </ul>
         <div class="Song">
-        <audio id="musicName" src="music.mp3" preload="metadata"></audio>
-         
+            <audio id="musicName" src="music.mp3" preload="metadata"></audio>
+
         </div>
         <div class="bottom">
-            <input type="range" name="range" id="progresBar" max="100" min="0">
-            <button id="play">CLick to plat</button>
-            <i class="fa-sharp fa-3x fa-solid fa-circle-play fa-spin"></i>
+           
+            <i id="play" class="fa-sharp fa-3x fa-solid fa-circle-play fa-spin" onclick="onClickHandler()"></i>
+            <i id="PauseButton"  class="fa-light fa-3x fa-pause fa-fade" onclick="Pause()"></i>
         </div>
     </nav>
-    <script>src="script.js"</script>
-    <script src="https://kit.fontawesome.com/338e059644.js" crossorigin="anonymous"></script> 
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/338e059644.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

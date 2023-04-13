@@ -1,6 +1,10 @@
-const music = document.getElementById('musicName');
-const play = document.getElementsById('play');
-play.addEventListener('click', () => {
-   console.log("ok");
-   music.play();
-  });
+const music = document.getElementById("musicName");
+const play = document.getElementsById("play");
+const PauseButton = document.getElementById('PauseButton');
+function onClickHandler() {
+  music.play();
+}
+function Pause()
+{
+  music.pause();
+}
