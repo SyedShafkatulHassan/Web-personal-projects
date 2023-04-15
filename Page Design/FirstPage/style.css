@@ -1,0 +1,48 @@
+ ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  height: 70px;
+  background-color: rgb(3, 38, 96);
+  color: rgb(255, 236, 239);
+  cursor: pointer;
+  flex-direction: row;
+}
+.NavigationPart{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.InfluerncerProduct{
+    margin-right: 900px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.About{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.Home{
+    margin-top: 53px;
+    margin-right: 20px;
+}
+.Product{
+    margin-top: 53px;
+    margin-right: 20px; 
+}
+.SignUp{
+    margin-top: 53px;
+    margin-right: 20px; 
+}
+.Login{
+    margin-top: 53px;
+    margin-right: 20px; 
+}
+.Search{
+
+}
+.fa-search {
+    font-size: 20px;
+    color: #000;
+  }
