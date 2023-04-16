@@ -68,14 +68,23 @@
 }
 .Second{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
 }
 .Image{
    margin-left: 400px;
    height: 300px;
    width: 300px;
-   background-image: url("Camera.png");
-   background-attachment: fixed;
-   background-size: cover;
-   object-fit: fill;
+}
+.my-button {
+    height: 40px;
+    width: 120px;
+    background-color:#E02C6D;
+   
+    border: 20px;
+  }
+.Alibaba{
+  margin-left: 150px;   
+}
+.ThirdPart{
+    margin-top: 150px;
 }
