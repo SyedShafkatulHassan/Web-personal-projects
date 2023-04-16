@@ -66,3 +66,16 @@
     size: 16px;
     font-size: 16px;
 }
+.Second{
+    display: flex;
+    flex-direction: row;
+}
+.Image{
+   margin-left: 400px;
+   height: 300px;
+   width: 300px;
+   background-image: url("Camera.png");
+   background-attachment: fixed;
+   background-size: cover;
+   object-fit: fill;
+}
