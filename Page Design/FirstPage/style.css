@@ -1,22 +1,15 @@
- ul{
-  display: flex;
-  list-style: none;
-  align-items: center;
-  height: 70px;
-  background-color: rgb(3, 38, 96);
-  color: rgb(255, 236, 239);
-  cursor: pointer;
-  flex-direction: row;
-}
 .NavigationPart{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    height: 150px;
 }
 .InfluerncerProduct{
     margin-right: 900px;
     margin-top: 50px;
     margin-left: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 .About{
     display: flex;
@@ -26,23 +19,50 @@
 .Home{
     margin-top: 53px;
     margin-right: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 .Product{
     margin-top: 53px;
     margin-right: 20px; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 .SignUp{
     margin-top: 53px;
-    margin-right: 20px; 
+    margin-right: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; 
 }
 .Login{
     margin-top: 53px;
-    margin-right: 20px; 
+    margin-right: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; 
 }
 .Search{
+    margin-top: 53px;
+    margin-right: 20px; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.ShopingCart{
+    margin-top: 53px;
+    margin-right: 20px; 
+}
+.SecondPart{
+    margin-left: 50px;
 
 }
-.fa-search {
-    font-size: 20px;
-    color: #000;
-  }
+.StartYourJourny{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    size: 52px;
+    font-size: 52px;
+}
+.Lorium{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    size: 16px;
+    font-size: 16px;
+}
