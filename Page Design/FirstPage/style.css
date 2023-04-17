@@ -76,15 +76,29 @@
    width: 300px;
 }
 .my-button {
-    height: 40px;
-    width: 120px;
+    height: 30px;
+    width: 140px;
     background-color:#E02C6D;
-   
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
     border: 20px;
-  }
-.Alibaba{
-  margin-left: 150px;   
+    text-align: center; 
+    position: absolute;
 }
 .ThirdPart{
-    margin-top: 150px;
+    margin-top: 200px;
+    background-color: aqua;
 }
+.Alibaba{
+    margin-left: 165px;
+ 
+  width: 40px;
+  background-color: #E02C6D; 
+}
+.Amazon{
+    margin-left: 245px;
+    width: 40px;
+    background-color: #E02C6D;
+  }
