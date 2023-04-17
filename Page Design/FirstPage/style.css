@@ -89,16 +89,48 @@
 }
 .ThirdPart{
     margin-top: 200px;
-    background-color: aqua;
+    display: flex;
+    align-items: center;
 }
 .Alibaba{
     margin-left: 165px;
- 
-  width: 40px;
-  background-color: #E02C6D; 
+    width: 40px;
 }
 .Amazon{
-    margin-left: 245px;
+    margin-left: 120px;
     width: 40px;
-    background-color: #E02C6D;
+    margin-top: 7px;
   }
+  .Daraz{
+    margin-left: 120px;
+    width: 40px;
+    margin-bottom: 7px;
+  }
+  .Ebay{
+    margin-left: 120px;
+    width: 40px;
+  }
+  .Recuten{
+    margin-left: 120px;
+    width: 40px;
+  }
+  .Walmart{
+    margin-left: 120px;
+    width: 40px;
+  }
+  .Target{
+    margin-left: 120px;
+    width: 40px;
+  }
+  .Popularcollectio{
+    margin-top: 300px;
+    display: flex;
+    background-color: aqua;
+}
+
+  .Pc{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    size: 16px;
+    font-size: 16px;
+}
