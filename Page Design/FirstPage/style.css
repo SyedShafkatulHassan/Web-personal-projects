@@ -21,6 +21,7 @@
     margin-right: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+
 }
 .Product{
     margin-top: 53px;
@@ -88,9 +89,11 @@
     position: absolute;
 }
 .ThirdPart{
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
     align-items: center;
+    height: 100px;
+    /* background-color: #E02C6D; */
 }
 .Alibaba{
     margin-left: 165px;
@@ -113,6 +116,7 @@
   .Recuten{
     margin-left: 120px;
     width: 40px;
+    
   }
   .Walmart{
     margin-left: 120px;
@@ -122,10 +126,11 @@
     margin-left: 120px;
     width: 40px;
   }
-  .Popularcollectio{
+  .Popularcollection{
     margin-top: 300px;
+    margin-left: 40%;
     display: flex;
-    background-color: aqua;
+    position: absolute;
 }
 
   .Pc{
@@ -133,4 +138,18 @@
     font-weight: 600;
     size: 16px;
     font-size: 16px;
+    font-size: 28px;
+    line-height: 70px;
+}
+.FourthPart{
+    display: flex;
+    margin-top: 300px;
+    margin-bottom: 10px;
+}
+.checked {
+    color: orange;
+  }
+.FifthPart{
+    display: flex;
+    margin-top: 10px;
 }
