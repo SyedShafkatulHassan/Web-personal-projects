@@ -9,21 +9,43 @@
             <div style="background-color: rgb(15,110,222);height: 200px;width: 550px;">
 
             </div>
-            <div style="background-color:white;height: 350px;width: 550px;font-family: 'Poppins', sans-serif;color: black;">
-                  <h3 style="padding-left: 190px;padding-top: 25px;">Registration Page</h3>
+            <div style="background-color:white;height: 350px;width: 550px;font-family: 'Poppins', sans-serif;color: black;overflow: hidden;">
+                <div class="Registration" id="regestration">
+                  <h3 style="padding-left: 190px;padding-top: 55px;">Registration Page</h3>
                   <form >
-                    <input type="text" placeholder="Username" style="margin-left: 140px;margin-top: 20px;width: 270px;border-color: black;height: 25px;">
-                    <input type="password" placeholder="password" style="margin-left: 140px;margin-top: 20px;width: 270px;border-color: black;height: 25px;">
-                    <input type="password" placeholder="conferm password" style="margin-left: 140px;margin-top: 20px;width: 270px;border-color: black;height: 25px;">
-                    <input type="number" placeholder="phonenumber" style="margin-left: 140px;margin-top: 20px;width: 270px;border-color: black;height: 25px;">
+                    <input type="text" placeholder="Username" style="margin-left: 140px;margin-top: 20px;width: 270px;height: 25px; border: none;border-bottom: 2px solid rgb(0, 0, 0);">
+                    <input type="password" placeholder="password" style="margin-left: 140px;margin-top: 20px;width: 270px;border: none;border-bottom: 2px solid rgb(0, 0, 0);height: 25px;">
+                    <input type="password" placeholder="confirm password" style="margin-left: 140px;margin-top: 20px;width: 270px;border: none;border-bottom: 2px solid rgb(0, 0, 0);height: 25px;">
+                    <input type="number" placeholder="phonenumber" style="margin-left: 140px;margin-top: 20px;width: 270px;border: none;border-bottom: 2px solid rgb(0, 0, 0);height: 25px;">
                   </form>
-                  <button>Login</button>
+                  <button style="height: 27px;width: 120px;margin-top: 30px;margin-left: 80px;border-radius: 12px;"onclick="login()">Login</button>
+                  <button style="height: 27px;width: 120px;margin-top: 30px;margin-left: 130px;border-radius: 12px;">Regestration</button>
+                </div>
+                <div class="Login" id="login">
+                    <h3 style="padding-left: 190px;padding-top: 55px;">Login Page</h3>
+                    <form >
+                      <input type="text" placeholder="Username" style="margin-left: 140px;margin-top: 20px;width: 270px;height: 25px; border: none;border-bottom: 2px solid rgb(0, 0, 0);">
+                      <input type="password" placeholder="password" style="margin-left: 140px;margin-top: 20px;width: 270px;border: none;border-bottom: 2px solid rgb(0, 0, 0);height: 25px;">
+                      <input type="password" placeholder="confirm password" style="margin-left: 140px;margin-top: 20px;width: 270px;border: none;border-bottom: 2px solid rgb(0, 0, 0);height: 25px;">
+                      <input type="number" placeholder="phonenumber" style="margin-left: 140px;margin-top: 20px;width: 270px;border: none;border-bottom: 2px solid rgb(0, 0, 0);height: 25px;">
+                    </form>
+                    <button style="height: 27px;width: 120px;margin-top: 30px;margin-left: 80px;border-radius: 12px;">Login</button>
+                    <button style="height: 27px;width: 120px;margin-top: 30px;margin-left: 130px;border-radius: 12px;">Regestration</button>
+                  </div>
             </div>
             <div style="background-color:rgb(15,110,222);height: 200px;width: 550px;">
 
             </div>
         </div>
     </div>
+    <script>
+        var R= document.getElementById("regestration");
+        var L= document.getElementById("login");
+        function login()
+        {
+           R.style.top="-400px";
+        }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
