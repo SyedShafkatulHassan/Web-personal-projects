@@ -1,48 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <style>
+    .Firstform {
+      margin-left: 140px;margin-top: 20px;width: 270px;height: 25px; border: none;border-bottom: 2px solid rgb(0, 0, 0);
+    }
+    .FistFormButton{
+      height: 27px;width: 120px;margin-top: 30px;margin-left: 130px;border-radius: 12px;
+    }
+    .CenterBox {
+      background-color: white;
+      height: 350px;
+      width: 550px;
+      font-family: 'Poppins', sans-serif;
+      color: black;
+    }
+    h3{
+      padding-left: 190px;padding-top: 55px;
+    }
+    #login{
+      display: none;
+    }
+  </style>
 </head>
+
 <body>
-    <div style="background-color: rgb(15,110,222); background-size: cover; width: 1550px;height: 750px;">
-        <div style="background-color: white;height: 750px;width: 550px;margin-left: 500px;">
-            <div style="background-color: rgb(15,110,222);height: 200px;width: 550px;">
+  <div style="background-color: rgb(15,110,222); background-size: cover; width: 1550px;height: 750px;">
+    <div style="background-color: white;height: 750px;width: 550px;margin-left: 500px;">
+      <div style="background-color: rgb(15,110,222);height: 200px;width: 550px;">
 
-            </div>
-            <div style="background-color:white;height: 350px;width: 550px;font-family: 'Poppins', sans-serif;color: black;">        
-                  <form id="regestration">
-                    <h3 style="padding-left: 190px;padding-top: 55px;">Registration Page</h3>
-                    <input type="text" placeholder="Username" style="margin-left: 140px;margin-top: 20px;width: 270px;height: 25px; border: none;border-bottom: 2px solid rgb(0, 0, 0);">
-                    <input type="password" placeholder="password" style="margin-left: 140px;margin-top: 20px;width: 270px;border: none;border-bottom: 2px solid rgb(0, 0, 0);height: 25px;">
-                    <input type="password" placeholder="confirm password" style="margin-left: 140px;margin-top: 20px;width: 270px;border: none;border-bottom: 2px solid rgb(0, 0, 0);height: 25px;">
-                    <input type="number" placeholder="phonenumber" style="margin-left: 140px;margin-top: 20px;width: 270px;border: none;border-bottom: 2px solid rgb(0, 0, 0);height: 25px;">
-                    <button id="btn" style="height: 27px;width: 120px;margin-top: 30px;margin-left: 80px;border-radius: 12px;" onclick="login()">Login</button>
-                    <button style="height: 27px;width: 120px;margin-top: 30px;margin-left: 130px;border-radius: 12px;">Regestration</button>
-                  
-                  </form>
-                    <form id="login">
-                      <h3 style="padding-left: 190px;padding-top: 55px;">Login Page</h3>
-                      <input type="text" placeholder="Username" style="margin-left: 140px;margin-top: 20px;width: 270px;height: 25px; border: none;border-bottom: 2px solid rgb(0, 0, 0);">
-                      <input type="password" placeholder="password" style="margin-left: 140px;margin-top: 20px;width: 270px;border: none;border-bottom: 2px solid rgb(0, 0, 0);height: 25px;">
-                      <input type="password" placeholder="confirm password" style="margin-left: 140px;margin-top: 20px;width: 270px;border: none;border-bottom: 2px solid rgb(0, 0, 0);height: 25px;">
-                      <input type="number" placeholder="phonenumber" style="margin-left: 140px;margin-top: 20px;width: 270px;border: none;border-bottom: 2px solid rgb(0, 0, 0);height: 25px;">
-                      <button style="height: 27px;width: 120px;margin-top: 30px;margin-left: 80px;border-radius: 12px;">Login</button>
-                      <button style="height: 27px;width: 120px;margin-top: 30px;margin-left: 130px;border-radius: 12px;">Regestration</button>
-                    </form>
-            </div>
-            <div style="background-color:rgb(15,110,222);height: 200px;width: 550px;">
-
-            </div>
+      </div>
+      <div class="CenterBox">
+        <div id="regestration">
+        <form >
+          <h3>Registration Page</h3>
+          <input type="text" placeholder="Username"class="Firstform">
+          <input type="password" placeholder="password"class="Firstform" >
+          <input type="password" placeholder="confirm password"class="Firstform">
+          <input type="number" placeholder="phonenumber"class="Firstform">
+          <button type="button" class="FistFormButton"onclick="login()">Login</button>
+          <button type="button" class="FistFormButton" >Regestration</button>
+        </form>
         </div>
+        <div id="login">
+          <form >
+            <h3 >Login Page</h3>
+            <input type="text" placeholder="Username"class="Firstform">
+            <input type="password" placeholder="password"class="Firstform" >
+            <input type="password" placeholder="confirm password"class="Firstform">
+            <input type="number" placeholder="phonenumber"class="Firstform">
+            <button type="button" class="FistFormButton">Login</button>
+            <button type="button" class="FistFormButton" onclick="reg()">Regestration</button>
+          </form>
+        </div>
+      </div>
+      <div style="background-color:rgb(15,110,222);height: 200px;width: 550px;">
+
+      </div>
     </div>
-    <script>
-        var R= document.getElementById("regestration");
-        function login() {
-          R.style.marginTop="300px";
-        }
-        
-    </script>
+  </div>
+  <script>
+    function login() {
+      var R = document.getElementById("regestration");
+      R.style.display ="none";
+      document.getElementById("login").style.display="block";
+      console.log("Presed");
+    }
+    function reg() {
+      var R = document.getElementById("login");
+      R.style.display ="none";
+      document.getElementById("regestration").style.display="block";
+      console.log("Presed");
+    }
+  </script>
 </body>
