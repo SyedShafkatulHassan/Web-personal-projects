@@ -6,11 +6,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <style>
-     ul{
+     nav{
         display: flex;
         background-color:rgb(0, 0, 0);
         height: 10vh;
         align-items: center;
+        flex-direction: row-reverse;
+        width: 100vw;
      } 
      .nav{
         margin-right: 2%;
@@ -21,23 +23,27 @@
         font-family: 'Poppins', sans-serif;
         align-items: center;
      }
+     @media only screen and (max-width: 900px) {
+     nav {
+     background-color: rgb(20, 20, 22);
+     flex-direction: row;
+    }
+      }
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
     </style>
 </head>
 <body>
     <div>
-        <ul>
-            <div class="nav">Home</div>>
-            <div class="nav">Css</div>
-            <div class="nav">Html</div>
-            <div class="nav">Java</div>
-            <div class="nav">Python</div>
-            <div class="nav">Typescriptffs</div>
-            <div class="nav">Typescript</div>
-            <div class="nav">Typescriptc</div>
-            <div class="nav">Typescript</div>
-            <div class="nav">Typescript</div>
-            <div class="nav">Typescript</div>
-        </ul>
+        <nav>
+            <div class="nav">MyMusic</div>>
+            <div class="nav">AboutMe</div>
+            <div class="nav">projects</div>
+            <div class="nav">MyGoals</div>
+        </nav>
     </div>
 </body>
 </html>
