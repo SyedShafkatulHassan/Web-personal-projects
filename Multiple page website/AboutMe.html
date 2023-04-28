@@ -56,6 +56,13 @@
         margin-top: 2vh;
         cursor: pointer;
      }
+     .gitHub{
+        margin-left: 7vw;
+        margin-top: 2vh;
+        cursor: pointer;
+        height: 10vh;
+        width: 10vw;
+     }
       * {
     padding: 0;
     margin: 0;
@@ -100,9 +107,9 @@
 <body>
     <div class="Navbar">
         <button class="nav" type="button">MyMusic</button>
-        <button class="nav" type="button">AboutMe</button>
         <button class="nav" type="button">Projects</button>
-        <button class="nav" type="button">MyGoals</button>
+        <button class="nav" type="button" onclick="HomePage()">HomePage</button>
+        <button class="nav" type="button">AboutMe</button>
     </div>
     <div class="MainClass">
         <div class="FirstPart">
@@ -113,10 +120,18 @@
             <p class="General">Web developer and ML engineer</p>
             <p class="General">phoneNumber</p>
             <p class="General">01737091061</p>
+            <p class="General">You can find me in</p>
+            <p class="General"><a href="https://github.com/SyedShafkatulHassan"><img style="height: 5vh;width: 5ww;border-radius: 70%;" src="Github.jpg" alt=""></a></p>
         </div>
         <div class="SecondPart">
               <img style="height: 70vh;width: 37vw;border-radius: 50%;" src="Shafkat.jpg" alt="">
         </div>
     </div>
+    <script>
+      function HomePage()
+      {
+        window.location.href="HomePage.html";
+      }
+    </script>
 </body>
 </html>
