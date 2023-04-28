@@ -45,10 +45,55 @@
       border-color: purple;
       background-color: #560ffd;
      }
+     h1{
+        color: orange;
+        margin-left: 7vw;
+        margin-top: 10vh;
+        cursor: pointer;
+     }
+     .General{
+        margin-left: 7vw;
+        margin-top: 2vh;
+        cursor: pointer;
+     }
       * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    }
+    @media only screen and (max-width: 900px) {
+        .Navbar{
+        height: 30vh;
+        width: 100vw;
+        background-color:black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .nav
+    {
+        margin-bottom: 3vh;
+        color: white;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        align-items: center;
+        text-align: center;
+        border-color: #560ffd;
+        width: 20vw;
+    }
+    .nav:hover {
+      border-color: purple;
+      background-color: #560ffd;
+     }
+    }
+    @media only screen and (max-width: 700px) {
+        .MainClass{
+        display: flex;
+        flex-direction: column;
+     }
+     .SecondPart{
+        margin-top: 5vh;
+     }
     }
     </style>
 </head>
@@ -61,10 +106,16 @@
     </div>
     <div class="MainClass">
         <div class="FirstPart">
-            
+            <h1>About Me</h1>
+            <p class="General">Email</p>
+            <p class="General">SyedShafkatulHassan@gmail.com</p>
+            <p class="General">Role</p>
+            <p class="General">Web developer and ML engineer</p>
+            <p class="General">phoneNumber</p>
+            <p class="General">01737091061</p>
         </div>
         <div class="SecondPart">
-              <img style="height: 70vh;width: 40vw;border-radius: 50%;" src="Shafkat.jpg" alt="">
+              <img style="height: 70vh;width: 37vw;border-radius: 50%;" src="Shafkat.jpg" alt="">
         </div>
     </div>
 </body>
