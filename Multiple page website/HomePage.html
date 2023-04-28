@@ -22,12 +22,32 @@
         width: 7vw;
         font-family: 'Poppins', sans-serif;
         align-items: center;
+        background-color: black;
+        border-color: #560ffd;
+     }
+     .nav:hover {
+      border-color: purple;
+      background-color: #560ffd;
      }
      .coder{
         background-image: url("coder.jpg");
         height: 90vh;
         width: 100vw;
         background-size: 100vw 90vh;
+        align-items: center;
+     }
+     .p
+     {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        align-items: center;
+        text-align: center;
+     }
+     .p1{
+        color: transparent;
+        font-family: 'Poppins', sans-serif;
+        align-items: center;
+         
      }
      @media only screen and (max-width: 900px) {
      nav {
@@ -44,11 +64,28 @@
         cursor: pointer;
         font-family: 'Poppins', sans-serif;
         align-items: center;
+        text-align: center;
+        border-color: #560ffd;
+        width: 20vw;
     }
     .coder{
         background-image: url("Gamer.jpg");
+        height: 65vh;
         background-size: 100vw 65vh;
     }
+    .p{
+        color:transparent ;
+    }
+    .p1{
+       color: white;
+      font-family: 'Poppins', sans-serif;
+        align-items: center;
+        text-align: center;
+    }
+    .nav:hover {
+      border-color: purple;
+      background-color: #560ffd;
+     }
       }
     * {
     padding: 0;
@@ -59,15 +96,17 @@
 </head>
 <body>
     <div>
-        <nav>
-            <div class="nav">MyMusic</div>
-            <div class="nav">AboutMe</div>
-            <div class="nav">projects</div>
-            <div class="nav">MyGoals</div>
+        <nav>   
+            <button class="nav" type="button">MyMusic</button>
+            <button class="nav" type="button">AboutMe</button>
+            <button class="nav" type="button">Projects</button>
+            <button class="nav" type="button">MyGoals</button>
         </nav>
     </div>
     <div class="coder">
-       
+       <h3 class="p">Hello It's Syed Shafkatul Hassan</h3>
+       <h3 class="p">I am A programmer By Profession And </h3>
+       <h3 class="p1">Gammer by pession</h3>
     </div>
 </body>
 </html>
