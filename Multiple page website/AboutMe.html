@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Me</title>
+    <style>
+      .Navbar{
+        height: 10vh;
+        width: 100vw;
+        background-color:black;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+      }
+      .MainClass{
+        display: flex;
+        height: 90vh;
+        width: 100vw;
+        
+      }
+      .FirstPart{
+         height: 90vh;
+         width: 50vw;
+         background-color: white;   
+      }
+      .SecondPart{
+        height: 90vh;
+         width: 50vw;
+        background-color: white;
+        display: grid;
+        place-items: center;
+      }
+      .nav{
+        margin-right: 2%;
+        color: white;
+        cursor: pointer;
+        height: 5vh;
+        width: 7vw;
+        font-family: 'Poppins', sans-serif;
+        align-items: center;
+        background-color: black;
+        border-color: #560ffd;
+     }
+     .nav:hover {
+      border-color: purple;
+      background-color: #560ffd;
+     }
+      * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    </style>
+</head>
+<body>
+    <div class="Navbar">
+        <button class="nav" type="button">MyMusic</button>
+        <button class="nav" type="button">AboutMe</button>
+        <button class="nav" type="button">Projects</button>
+        <button class="nav" type="button">MyGoals</button>
+    </div>
+    <div class="MainClass">
+        <div class="FirstPart">
+            
+        </div>
+        <div class="SecondPart">
+              <img style="height: 70vh;width: 40vw;border-radius: 50%;" src="Shafkat.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
