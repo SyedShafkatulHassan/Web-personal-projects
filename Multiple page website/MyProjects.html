@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MyProjects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <style>
+        .Navbar{
+        height: 10vh;
+        width: 100vw;
+        background-color:black;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+      }
+        .nav{
+        margin-right: 2%;
+        color: white;
+        cursor: pointer;
+        height: 5vh;
+        width: 7vw;
+        font-family: 'Poppins', sans-serif;
+        align-items: center;
+        background-color: black;
+        border-color: #560ffd;
+     }
+     .nav:hover {
+      border-color: purple;
+      background-color: #560ffd;
+     }
+     * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    .title{
+        margin-left: 38vw;
+        margin-top: 5vh;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: x-large;
+        height: 10vh;
+    }
+    .Projects{
+         height: 75vh;
+         width: 80vw;
+         background-color: gray;
+         margin-left: 10vw;
+         display: grid;
+         grid-template-columns: repeat(3,1fr);
+         grid-template-rows: repeat(3,1fr);
+         row-gap: 5vh; 
+         column-gap: 7vw;
+    }
+    .Iteam{
+        margin-top: 3vh;
+        height: 30vh;
+        width: 15vw;
+        background-color: white;
+        margin-left: 3vw;
+    }
+    .Heading{
+        margin-top: 0.5vh;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: large;
+        margin-left: 0.1vw;
+    }
+    .Language{
+        margin-top: 0.5vh;
+        margin-left: 0.2vw;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: medium;
+        color: rgb(210, 121, 5);
+    }
+    .General{
+        cursor: pointer;
+        place-items: center;
+        width: 14vw;
+        height: 20vh; 
+        margin-left: 0.1vw;
+    }
+    @media only screen and (max-width: 900px) {
+        .title{
+        margin-left: 20vw;
+        margin-top: 5vh;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: medium;
+        height: 10vh;
+    }
+    
+    nav {
+     height: 35vh;
+     width: 100vw;
+     background-color: rgb(20, 20, 22);
+     flex-direction: column;
+     align-items: center;
+    }
+    .nav
+    {
+        margin-bottom: 3vh;
+        color: white;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        align-items: center;
+        text-align: center;
+        border-color: #560ffd;
+        /* border-color: #2f0bb2; */
+        width: 20vw;
+    }
+    .Projects{
+         height: 215vh;
+         width: 80vw;
+         background-color: gray;
+         margin-left: 10vw;
+         display: grid;
+         grid-template-columns: repeat(1,1fr);
+         grid-template-rows: repeat(1,1fr);
+         row-gap: 3vh; 
+         column-gap: 4vw;
+    }
+    .Iteam{
+        margin-top: 3vh;
+        height: 30vh;
+        width: 50vw;
+        background-color: white;
+        margin-left: 3vw;
+    }
+    .Language{
+        margin-top: 0.5vh;
+        margin-left: 0.2vw;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: medium;
+        color: rgb(210, 121, 5);
+    }
+    .General{
+        cursor: pointer;
+        place-items: center;
+        width: 49vw;
+        height: 20vh; 
+        margin-left: 0.1vw;
+    }
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    }
+    </style>
+</head>
+<body>
+    <div class="Navbar">
+        <button class="nav" type="button">MyMusic</button>
+        <button class="nav" type="button">Projects</button>
+        <button class="nav" type="button" onclick="HomePage()">HomePage</button>
+        <button class="nav" type="button">AboutMe</button>
+    </div>
+    <div class="Top">
+        <p class="title">Here are all my projects</p>
+        <div class="Projects">
+            <div class="Iteam">
+                <p class="Heading">Welcome to Bangladesh</p>
+                <p class="Language">C</p>
+                <p class="General"><a href="https://github.com/SyedShafkatulHassan/MY-FIRST-YEAR-2nd-SEMESTER-PROJECT"><img class="General" src="tourisom.jpg" alt=""></a></p>
+            </div>
+            <div class="Iteam">
+                <p class="Heading"> Pandamic-vs-We</p>
+                <p class="Language">Java,Java-Swing</p>
+                <p class="General"><a href="https://github.com/SyedShafkatulHassan/Pandamic-vs-We"><img class="General" src="covid.jpg" alt=""></a></p>
+            </div>
+            <div class="Iteam">
+                <p class="Heading">Hostel_Manegement</p>
+                <p class="Language">Java,Java-Swing</p>
+                <p class="General"><a href="https://github.com/SyedShafkatulHassan/Hostel_Manegement_System"><img class="General" src="Hostel.jpg" alt=""></a></p>
+            </div>
+            <div class="Iteam">
+                <p class="Heading">project_mealman</p>
+                <p class="Language">Dart,Flutter</p>
+                <p class="General"><a href="https://github.com/SyedShafkatulHassan/project_mealman"><img class="General" src="FoodDel.jpg" alt=""></a></p>
+            </div>
+            <div class="Iteam">
+                <p class="Heading">FlutterProjects</p>
+                <p class="Language">Dart,Flutter</p>
+                <p class="General"><a href="https://github.com/SyedShafkatulHassan/FlutterProjects"><img class="General" src="flutter.jpg" alt=""></a></p>
+            </div>
+            <div class="Iteam">
+                <p class="Heading"> Web-personal-projects</p>
+                <p class="Language">HTML,CSS,JS</p>
+                <p class="General"><a href="https://github.com/SyedShafkatulHassan/Web-personal-projects"><img class="General" src="web.jpg" alt=""></a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!-- ok -->
