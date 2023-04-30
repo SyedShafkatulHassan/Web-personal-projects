@@ -205,10 +205,10 @@
 </head>
 <body>
     <div class="Navbar">
-        <button class="nav" type="button">MyMusic</button>
+        <button class="nav" type="button" onclick="logout()">Logout</button>
         <button class="nav" type="button">Projects</button>
         <button class="nav" type="button" onclick="HomePage()">HomePage</button>
-        <button class="nav" type="button">AboutMe</button>
+        <button class="nav" type="button" onclick="AboutMe()">AboutMe</button>
     </div>
     <div class="Top">
         <p class="title">Here are all my projects</p>
@@ -245,6 +245,21 @@
             </div>
         </div>
     </div>
+    <script>
+        function HomePage()
+        {
+        window.location.href="HomePage.html";
+       }
+      
+        function logout()
+        {
+            window.location.href="index.html";
+        }
+        function AboutMe()
+        {
+            window.location.href="AboutMe.html";
+        }
+    </script>
 </body>
 </html>
 <!-- ok -->

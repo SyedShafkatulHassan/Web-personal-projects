@@ -55,8 +55,8 @@
         <div id="login">
           <form >
             <h3 >Login Page</h3>
-            <input type="text" placeholder="Username"class="Firstform" id="Name">
-            <input type="password" placeholder="password"class="Firstform" id="Password" >
+            <input type="text" placeholder="Username(1 capital,1 small 1 number)"class="Firstform" id="Name">
+            <input type="password" placeholder="password(1 capital,1 small 1 number,% and !)"class="Firstform" id="Password" >
             <button type="button" class="FistFormButton" onclick="NextPage()">Login</button>
             <button type="button" class="FistFormButton" onclick="reg()">Regestration page</button>
           </form>
@@ -84,15 +84,17 @@
     function NextPage()
     {
       var Name=document.getElementById("Name").value;
-      var Password=document.getElementById("Password").value;
-      if(Name=="Shafkat" && Password=="pp")
+      var NameReg= /^[A-Za-z0-9]{4,10}$/;
+      var pass=document.getElementById("Password").value;
+      var passregex=/^[A-Za-z0-9%!]{5,10}$/;
+      if(NameReg.test(Name)==true && passregex.test(pass)==true)
       {
-        console.log(Name);
+        console.log("ok");
         window.location.href = "HomePage.html";
       }
       else
       {
-        // console.log("Not Ok");
+        console.log("Not Ok");
         // console.log(Name);
         // console.log(Password);
       }

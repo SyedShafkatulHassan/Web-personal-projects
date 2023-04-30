@@ -106,8 +106,8 @@
 </head>
 <body>
     <div class="Navbar">
-        <button class="nav" type="button">MyMusic</button>
-        <button class="nav" type="button">Projects</button>
+      <button class="nav" type="button" onclick="logout()">Logout</button>
+      <button class="nav" type="button" onclick="project()">Projects</button>
         <button class="nav" type="button" onclick="HomePage()">HomePage</button>
         <button class="nav" type="button">AboutMe</button>
     </div>
@@ -132,6 +132,14 @@
       {
         window.location.href="HomePage.html";
       }
+      function project()
+        {
+            window.location.href="MyProjects.html";
+        }
+        function logout()
+        {
+            window.location.href="index.html";
+        }
     </script>
 </body>
 </html>

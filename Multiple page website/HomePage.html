@@ -97,8 +97,8 @@
 <body>
     <div>
         <nav>   
-            <button class="nav" type="button">MyMusic</button>
-            <button class="nav" type="button">Projects</button>
+            <button class="nav" type="button" onclick="logout()">Logout</button>
+            <button class="nav" type="button" onclick="project()">Projects</button>
             <button class="nav" type="button">HomePage</button>
             <button class="nav" type="button" onclick="AboutMe()">AboutMe</button>
         </nav>
@@ -112,6 +112,14 @@
         function AboutMe()
         {
             window.location.href="AboutMe.html";
+        }
+        function project()
+        {
+            window.location.href="MyProjects.html";
+        }
+        function logout()
+        {
+            window.location.href="index.html";
         }
     </script>
 </body>
