@@ -83,24 +83,78 @@
         height: 20vh; 
         margin-left: 0.1vw;
     }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 1200px) {
+        .nav{
+        margin-right: 2%;
+        color: white;
+        cursor: pointer;
+        height: 5vh;
+        width: 9vw;
+        font-family: 'Poppins', sans-serif;
+        align-items: center;
+        background-color: black;
+        border-color: #560ffd;
+     }
+        .General{
+        cursor: pointer;
+        place-items: center;
+        width: 14.5vw;
+        height: 15vh; 
+        margin-left: 0.1vw;
+    }
+    .Heading{
+        margin-top: 0.5vh;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: small;
+        margin-left: 0.1vw;
+    }
+    .Language{
+        margin-top: 0.5vh;
+        margin-left: 0.2vw;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: small;
+        color: rgb(210, 121, 5);
+    }
+    .Iteam{
+        margin-top: 3vh;
+        height: 25vh;
+        width: 15vw;
+        background-color: white;
+        margin-left: 3vw;
+    }
+}
+    @media only screen and (max-width: 900px) {    
+        .Projects{
+         height: 120vh;
+         width: 80vw;
+         background-color: gray;
+         margin-left: 10vw;
+         display: grid;
+         grid-template-columns: repeat(2,1fr);
+         grid-template-rows: repeat(2,1fr);
+         row-gap: 2vh; 
+         column-gap: 7vw;
+    }
         .title{
-        margin-left: 20vw;
+        margin-left: 30vw;
         margin-top: 5vh;
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
         font-size: medium;
         height: 10vh;
     }
-    
-    nav {
-     height: 35vh;
-     width: 100vw;
-     background-color: rgb(20, 20, 22);
-     flex-direction: column;
-     align-items: center;
-    }
-    .nav
+    .Navbar{
+        height: 30vh;
+        width: 100vw;
+        background-color:black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+      }
+      .nav
     {
         margin-bottom: 3vh;
         color: white;
@@ -109,41 +163,37 @@
         align-items: center;
         text-align: center;
         border-color: #560ffd;
-        /* border-color: #2f0bb2; */
         width: 20vw;
     }
-    .Projects{
-         height: 215vh;
-         width: 80vw;
-         background-color: gray;
-         margin-left: 10vw;
-         display: grid;
-         grid-template-columns: repeat(1,1fr);
-         grid-template-rows: repeat(1,1fr);
-         row-gap: 3vh; 
-         column-gap: 4vw;
+   
+    .General{
+        cursor: pointer;
+        place-items: center;
+        width: 24.5vw;
+        height: 20vh; 
+        margin-left: 0.1vw;
     }
-    .Iteam{
-        margin-top: 3vh;
-        height: 30vh;
-        width: 50vw;
-        background-color: white;
-        margin-left: 3vw;
+    .Heading{
+        margin-top: 0.5vh;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: small;
+        margin-left: 0.1vw;
     }
     .Language{
         margin-top: 0.5vh;
         margin-left: 0.2vw;
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
-        font-size: medium;
+        font-size: small;
         color: rgb(210, 121, 5);
     }
-    .General{
-        cursor: pointer;
-        place-items: center;
-        width: 49vw;
-        height: 20vh; 
-        margin-left: 0.1vw;
+    .Iteam{
+        margin-top: 3vh;
+        height: 30vh;
+        width: 25vw;
+        background-color: white;
+        margin-left: 3vw;
     }
     * {
     padding: 0;
@@ -164,7 +214,7 @@
         <p class="title">Here are all my projects</p>
         <div class="Projects">
             <div class="Iteam">
-                <p class="Heading">Welcome to Bangladesh</p>
+                <p class="Heading">Tourisom App</p>
                 <p class="Language">C</p>
                 <p class="General"><a href="https://github.com/SyedShafkatulHassan/MY-FIRST-YEAR-2nd-SEMESTER-PROJECT"><img class="General" src="tourisom.jpg" alt=""></a></p>
             </div>
@@ -174,7 +224,7 @@
                 <p class="General"><a href="https://github.com/SyedShafkatulHassan/Pandamic-vs-We"><img class="General" src="covid.jpg" alt=""></a></p>
             </div>
             <div class="Iteam">
-                <p class="Heading">Hostel_Manegement</p>
+                <p class="Heading">Hostel_megement</p>
                 <p class="Language">Java,Java-Swing</p>
                 <p class="General"><a href="https://github.com/SyedShafkatulHassan/Hostel_Manegement_System"><img class="General" src="Hostel.jpg" alt=""></a></p>
             </div>
@@ -189,7 +239,7 @@
                 <p class="General"><a href="https://github.com/SyedShafkatulHassan/FlutterProjects"><img class="General" src="flutter.jpg" alt=""></a></p>
             </div>
             <div class="Iteam">
-                <p class="Heading"> Web-personal-projects</p>
+                <p class="Heading"> Web projects</p>
                 <p class="Language">HTML,CSS,JS</p>
                 <p class="General"><a href="https://github.com/SyedShafkatulHassan/Web-personal-projects"><img class="General" src="web.jpg" alt=""></a></p>
             </div>
