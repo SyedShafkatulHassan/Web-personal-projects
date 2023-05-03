@@ -44,10 +44,10 @@
         <div id="regestration">
         <form >
           <h3>Registration Page</h3>
-          <input type="text" placeholder="Username"class="Firstform">
-          <input type="password" placeholder="password"class="Firstform" >
-          <input type="password" placeholder="confirm password"class="Firstform">
-          <input type="number" placeholder="phonenumber"class="Firstform">
+          <input type="text" placeholder="Username"class="Firstform" id="Rname">
+          <input type="password" placeholder="password"class="Firstform" id="RPassword" >
+          <input type="password" placeholder="confirm password"class="Firstform" id="Conpass">
+          <input type="number" placeholder="phonenumber"class="Firstform" id="phone">
           <button type="button" class="FistFormButton"onclick="login()">Login page</button>
           <button type="button" class="FistFormButton" >Regestrater</button>
         </form>
@@ -69,17 +69,29 @@
     </div>
   </div>
   <script>
+    function reg()
+    {
+      var Name=document.getElementById("RName").value;
+      var NameReg= /^[A-Za-z0-9]{4,10}$/;
+      var pass=document.getElementById("RPassword").value;
+      var passregex=/^[A-Za-z0-9%!]{5,10}$/;
+      var Conpass=document.getElementById("Conpass").value;
+      if(Conpass===pass){
+      if(NameReg.test(Name)==true && passregex.test(pass)==true && phoneRegex.test(phone)==true)
+      {
+        //Then Reg
+      }
+    }
+    }
     function login() {
       var R = document.getElementById("regestration");
       R.style.display ="none";
       document.getElementById("login").style.display="block";
-      console.log("Presed");
     }
     function reg() {
       var R = document.getElementById("login");
       R.style.display ="none";
       document.getElementById("regestration").style.display="block";
-      console.log("Presed");
     }
     function NextPage()
     {

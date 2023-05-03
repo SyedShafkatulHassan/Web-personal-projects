@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>RegistrationPage</title>
+    <style>
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .LeftSide {
+            width: 50%;
+            height: 100%;
+            background-color: black;
+        }
+
+        .RightSide {
+            width: 50%;
+            height: 100%;
+            background-color: white;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #regestration{
+            display: flex;
+            flex-direction: column;
+        }
+        .RegForm{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="LeftSide">
+
+        </div>
+        <div class="RightSide">
+            <div id="regestration">
+                <form class="RegForm">
+                  <h3>Registration Page</h3>
+                  <input type="text" placeholder="Username"class="Firstform" id="Rname">
+                  <input type="password" placeholder="password"class="Firstform" id="RPassword" >
+                  <input type="password" placeholder="confirm password"class="Firstform" id="Conpass">
+                  <input type="number" placeholder="phonenumber"class="Firstform" id="phone">
+                  <button type="button" class="FistFormButton"onclick="login()">Login page</button>
+                  <button type="button" class="FistFormButton" >Regestrater</button>
+                </form>
+                </div>
+                <div id="login">
+                  <form >
+                    <h3 >Login Page</h3>
+                    <input type="text" placeholder="Username(1 capital,1 small 1 number)"class="Firstform" id="Name">
+                    <input type="password" placeholder="password(1 capital,1 small 1 number,% and !)"class="Firstform" id="Password" >
+                    <button type="button" class="FistFormButton" onclick="NextPage()">Login</button>
+                    <button type="button" class="FistFormButton" onclick="reg()">Regestration page</button>
+                  </form>
+                </div>
+        </div>
+    </div>
+</body>
+</body>
+
+</html>
