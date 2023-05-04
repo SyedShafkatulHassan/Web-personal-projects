@@ -3,6 +3,9 @@
 
 <head>
     <title>RegistrationPage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <style>
         .container {
             width: 100vw;
@@ -16,12 +19,24 @@
             width: 50%;
             height: 100%;
             background-color: black;
+        
         }
-
+        .LeftSideImage1{
+            width: 99.9%;
+            height: 99.4%;
+           
+        }
+        .LeftSideImage2{
+            width: 99.9%;
+            height: 99.4%;
+          
+        }
         .RightSide {
             width: 50%;
             height: 100%;
-            background-color: white;
+            background-color: white;  
+            font-family: 'Poppins', sans-serif;
+            color: black;
         }
 
         * {
@@ -32,12 +47,31 @@
         #regestration{
             display: flex;
             flex-direction: column;
+            width: 50%;
+            height: 100%;
         }
         .RegForm{
+            height: 50%;
+            width: 60%;
+            margin-left: 25%;
+            margin-top: 20%;
+            background-color: rgb(180, 12, 12);
+        }
+        .Firstform{
+            height: 10%;
+            width: 70%;
+            margin-top: 3%;
             display: flex;
             flex-direction: column;
-            width: 50%;
-            text-align: center;
+            margin-left: 10%;
+        }
+        .Button{
+           border-radius: 12px;
+        }
+        #RHead{
+            font-family: 'Poppins', sans-serif;
+            color: black;
+            margin-left: 12%;
         }
     </style>
 </head>
@@ -45,31 +79,39 @@
 <body>
     <div class="container">
         <div class="LeftSide">
-
+            <img class="LeftSideImage1"src="welcome.jpg"  alt="">
+            <img class="LeftSideImage2" src="Gamer.jpg" alt="">
+            <button style="background-color: blue;" onclick="Right()">Right</button>
+            <button style="background-color: rgb(239, 2, 2);"onclick="Left()" >Left</button>
         </div>
         <div class="RightSide">
-            <div id="regestration">
-                <form class="RegForm">
-                  <h3>Registration Page</h3>
+          
+                  <form class="RegForm">
+                  <h3 id="RHead">Registration Page</h3>
                   <input type="text" placeholder="Username"class="Firstform" id="Rname">
                   <input type="password" placeholder="password"class="Firstform" id="RPassword" >
                   <input type="password" placeholder="confirm password"class="Firstform" id="Conpass">
                   <input type="number" placeholder="phonenumber"class="Firstform" id="phone">
-                  <button type="button" class="FistFormButton"onclick="login()">Login page</button>
-                  <button type="button" class="FistFormButton" >Regestrater</button>
-                </form>
-                </div>
-                <div id="login">
+                  <button type="button" class="Button"onclick="login()">Login page</button>
+                  <button type="button" class="Button" >Regestrater</button>
+                  </form>
+               
                   <form >
                     <h3 >Login Page</h3>
                     <input type="text" placeholder="Username(1 capital,1 small 1 number)"class="Firstform" id="Name">
                     <input type="password" placeholder="password(1 capital,1 small 1 number,% and !)"class="Firstform" id="Password" >
-                    <button type="button" class="FistFormButton" onclick="NextPage()">Login</button>
-                    <button type="button" class="FistFormButton" onclick="reg()">Regestration page</button>
+                    <button type="button" class="Button" onclick="NextPage()">Login</button>
+                    <button type="button" class="Button" onclick="reg()">Regestration page</button>
                   </form>
-                </div>
+               
         </div>
     </div>
+    <script>
+        function Right()
+        {
+            var reg= document.getElementsByClassName("LeftSideImage1");
+        }
+    </script>
 </body>
 </body>
 
