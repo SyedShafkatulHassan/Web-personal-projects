@@ -95,21 +95,22 @@
     }
     function NextPage()
     {
-      var Name=document.getElementById("Name").value;
-      var NameReg= /^[A-Za-z0-9]{4,10}$/;
-      var pass=document.getElementById("Password").value;
-      var passregex=/^[A-Za-z0-9%!]{5,10}$/;
-      if(NameReg.test(Name)==true && passregex.test(pass)==true)
-      {
-        console.log("ok");
-        window.location.href = "HomePage.html";
-      }
-      else
-      {
-        console.log("Not Ok");
-        // console.log(Name);
-        // console.log(Password);
-      }
+      window.location.href = "HomePage.html";
+      // var Name=document.getElementById("Name").value;
+      // var NameReg= /^[A-Za-z0-9]{4,10}$/;
+      // var pass=document.getElementById("Password").value;
+      // var passregex=/^[A-Za-z0-9%!]{5,10}$/;
+      // if(NameReg.test(Name)==true && passregex.test(pass)==true)
+      // {
+      //   console.log("ok");
+      //   window.location.href = "HomePage.html";
+      // }
+      // else
+      // {
+      //   console.log("Not Ok");
+      //   // console.log(Name);
+      //   // console.log(Password);
+      // }
     }
   </script>
 </body>
