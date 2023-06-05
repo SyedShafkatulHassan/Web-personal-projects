@@ -8,15 +8,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
   <style>
-   
     @media (min-width: 992px) {
       .LargeText {
         font-size: xx-large;
         font-weight: 800;
         font-family: 'Poppins', sans-serif;
       }
-
+        
       .SecondRow {
+        font-size: medium;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      .SubHeading1 {
         font-size: medium;
         font-weight: 500;
         font-family: 'Poppins', sans-serif;
@@ -34,6 +39,18 @@
       .SmallImage1 {
         width: 20px;
         height: 20px;
+      }
+
+      .SubHeading {
+        font-size: x-large;
+        font-weight: 800;
+        font-family: 'Poppins', sans-serif;
+      }
+      .Awards{
+        font-size: medium;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+        margin-left: 50px;
       }
     }
 
@@ -57,21 +74,55 @@
 </head>
 
 <body>
-  <div class="row">
+  <div class="container">
     <div class="row mt-5">
       <div class="col-sm-12 text-center col-lg-12">
         <div class="LargeText">Syed Shafkatul Hassan</div>
       </div>
       <div class="row" style="margin-top: 30px;">
-        <div class="SecondRow col-lg-3 col-sm-7 MarginLeft"> <img class="img-fluid SmallImage1" src="email.png" alt=""
-            style="margin-right: 3px;"> syedshafkatulhassan@gmail.com</div>
-        <div class="SecondRow col-lg-2 col-sm-7" style="margin-left: 10px;"> <img class="img-fluid SmallImage1"
-            src="GitHub.png" alt="" style="margin-right: 3px;">SyedShafkatulHassan</div>
-        <div class="SecondRow col-lg-2 col-sm-7" style="margin-left: 10px;"> <img class="img-fluid SmallImage1"
-            src="linkdin.png" alt="" style="margin-right: 3px;">Syed Shafkatul Hassan</div>
-        <div class="SecondRow col-lg-2 col-sm-7" style="margin-left: 10px;"> <img class="img-fluid SmallImage1"
-            src="location.png" alt="" style="margin-right: 3px;">Amborkhana , Sylhet</div>
+        <div class="col-lg-5 col-sm-7">
+          <div class="SecondRow" style="margin-left: 155px;"> <img class="img-fluid SmallImage1" src="email.png" alt=""
+              style="margin-right: 3px;"> syedshafkatulhassan@gmail.com</div>
+        </div>
+        <div class="col-lg-3 col-sm-7" style="margin-left: 10px;">
+          <div class="SecondRow"><img class="img-fluid SmallImage1" src="GitHub.png" alt=""
+              style="margin-right: 3px;">SyedShafkatulHassan</div>
+        </div>
+        <div class="col-lg-3 col-sm-7" style="margin-left: 10px;">
+          <div class="SecondRow"><img class="img-fluid SmallImage1" src="linkdin.png" alt=""
+              style="margin-right: 3px;">Syed Shafkatul Hassan</div>
+        </div>
       </div>
+    </div>
+    <div class="col-lg-12 mt-5">
+      <div class="SubHeading">Education</div>
+      <div class="row mt-3">
+        <div class="col-lg-6">
+          <div class="SubHeading1">Leading University</div>
+        </div>
+        <div class="col-lg-6">
+          <div class="SubHeading2" style="margin-left: 500px;">Sylhet</div>
+        </div>
+      </div>
+      <div class="row mt-1">
+        <div class="col-lg-6">
+          <div class="SubHeading2">BSC in CSE</div>
+        </div>
+        <div class="col-lg-6">
+          <div class="SubHeading2" style="margin-left: 400px;">2020-2024(Running)</div>
+        </div>
+      </div>
+      <div class="row mt-1">
+        <div class="col-lg-6">
+          <div class="SubHeading2">Result : 3.81 </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12 mt-5">
+      <div class="SubHeading">Awards and Honors</div>
+      <div class="Awards mt-4" > 1 . Second runner-up: “LUCC Presents ”Bitfest”, Intra Univercity Programing Contest”</div>
+      <div class="Awards mt-4" > 2 . Coder of the month: “ACM Community, Leading University”</div>
+      <div class="Awards mt-4" > 3 . Teaching assistant:(CSE-2118, Computer Algorithms, and Complexity : Sessional)</div>
     </div>
   </div>
 </body>
