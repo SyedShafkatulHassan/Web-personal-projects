@@ -21,11 +21,22 @@
         margin-left: 50px;
       }
       
-      .SecondRow {
+      
+      .SecondRow,
+      .SecondRow1,.SecondRow2 {
         font-size: medium;
         font-weight: 500;
         font-family: 'Poppins', sans-serif;
       }
+     
+      .SecondRow {
+        margin-left: 32%
+      }
+      
+      .SecondRow1,.SecondRow2 {
+        margin-left: 10%;
+      }
+      
 
       .SubHeading1 {
         font-size: medium;
@@ -33,10 +44,6 @@
         font-family: 'Poppins', sans-serif;
       }
 
-
-      .MarginLeft {
-        margin-left: 155px;
-      }
 
       .SmallImage1 {
         width: 25px;
@@ -56,17 +63,24 @@
       }
     }
 
-    @media (min-width: 350px) {
+    @media  (min-width:200px) or (max-width:400px){
       .LargeText {
-        font-size: 40px;
+        font-size: 300%;
         font-weight: 800;
         font-family: 'Poppins', sans-serif;
       }
       .SmallImage1 {
-        width: 5%;
-        height: 5%;
+        width: 3%;
+        height: 3%;
       }
-
+       .SecondRow, .SecondRow1 , .SecondRow2  {
+        font-size: larger;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+      }
+      .cent{
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -78,17 +92,17 @@
         <div class="LargeText ">Syed Shafkatul Hassan</div>
       </div>
       <div class="row" style="margin-top: 2%;">
-        <div class="col-lg-5 col-sm-4">
-          <div class="SecondRow" style="margin-left: 30%;"> <img class="img-fluid SmallImage1" src="email.png" alt=""
+        <div class="col-lg-5 col-sm-12 cent">
+          <div class="SecondRow " > <img class="img-fluid SmallImage1" src="email.png" alt=""
               style="margin-right: 1%;"> syedshafkatulhassan@gmail.com</div>
         </div>
-        <div class="col-lg-3 col-sm-7" style="margin-left: 2%;">
-          <div class="SecondRow"><img class="img-fluid SmallImage1" src="GitHub.png" alt=""
-              style="margin-right: 1%;">SyedShafkatulHassan</div>
-        </div>
-        <div class="col-lg-3 col-sm-7" style="margin-left: 2%;">
-          <div class="SecondRow"><img class="img-fluid SmallImage1" src="linkdin.png" alt=""
+        <div class="col-lg-3 col-sm-12 cent">
+          <div class="SecondRow1"><img class="img-fluid SmallImage1" src="linkdin.png" alt=""
               style="margin-right: 1%;">Syed Shafkatul Hassan</div>
+        </div>
+        <div class="col-lg-3 col-sm-12 cent">
+          <div class="SecondRow2"><img class="img-fluid SmallImage1" src="GitHub.png" alt=""
+              style="margin-right: 1%;">SyedShafkatulHassan</div>
         </div>
       </div>
     </div>
