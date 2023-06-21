@@ -23,11 +23,15 @@
         }
 
         .HeadLarge {
-            margin-left: 87%;
+            margin-left: 80%;
             display: block;
         }
 
         .HeadSmall {
+            display: none;
+        }
+
+        .SecondPartSmall {
             display: none;
         }
 
@@ -39,10 +43,20 @@
             .HeadSmall {
                 display: block;
                 margin-left: 87%;
-                font-size: 70px; 
+                font-size: 70px;
+            }
+
+            .SecondPartLarge {
+                display: none;
+            }
+
+            .SecondPartSmall {
+                display: block;
+            }
+            .SecondPartSmall img {
+                width: 50%; /
             }
         }
-
     </style>
 
 </head>
@@ -55,14 +69,40 @@
             <div class="GFont HeadSmall"><i class="bi bi-list"></i></div>
         </div>
     </div>
-   <div class="SecondPartLarge" style="margin-top: 8%;">
-     <div class="container-lg-12">
-        <div class="row-lg-12">
-            <div class="GFont" style="font-weight: 700; font-style: normal;font-size: 44px;margin-left: 10%;">Hi, I am John,<br>reative Technologist</div>
-            <div class="GFont" style="margin-left: 10%;">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet<br>sint. Velit officia consequat  duis enim velit  mollit. Exercitation veniam<br>consequat sunt nostrud amet.</div>
+    <div class="SecondPartLarge" style="margin-top: 8%;">
+        <div class="container-lg-12">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div  style="font-weight: 700; font-style: normal;font-size: 44px;margin-left: 20%;">
+                        Hi, I am John,<br>reative Technologist
+                        <p class="GFont" style="font-weight: 100; font-style: normal;font-size: 20px;">Amet minim mollit
+                            non deserunt ullamco est sit aliqua dolor do amet<br>sint. Velit officia consequat duis enim
+                            velit mollit. Exercitation veniam<br>consequat sunt nostrud amet.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div style="margin-left: 50%;"><img src="Ellipse 3.png" alt=""></div>
+                </div>
+            </div>
         </div>
-     </div>
-   </div>
+    </div>
+    <div class="SecondPartSmall" style="margin-top: 8%;">
+        <div class="container-sm-12">
+            <div class="col">
+                <div class="col-sm-12">
+                    <div style=" text-align: center;"><img src="Ellipse 3.png" alt=""></div>
+                </div>
+                <div class="col-sm-12">
+                    <div  style="font-weight: 700; font-style: normal;font-size: 80px;margin-left: 25%;margin-top: 10%;">
+                        Hi, I am John,<br> &nbsp;&nbsp; &nbsp;Creative Technologist
+                        <p class="GFont" style="font-weight: 100; font-style: normal;font-size: 30px;margin-top: 10%;margin-left: -10%;">Amet minim mollit
+                            non deserunt ullamco est<br>&nbsp;&nbsp; sit aliqua dolor do ametsint. Velit officia <br> consequat duis enim
+                            velit mollit. Exercitation veniam<br>consequat sunt nostrud amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
