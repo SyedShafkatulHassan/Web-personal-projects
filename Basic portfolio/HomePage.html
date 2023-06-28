@@ -42,10 +42,11 @@
         .FourthPartSmall {
             display: none;
         }
-        
-        .FifthPartSmall{
+
+        .FifthPartSmall {
             display: none;
         }
+
         @media (max-width: 991px) {
             .HeadLarge {
                 display: none;
@@ -84,10 +85,12 @@
             .FourthPartSmall {
                 display: block;
             }
-            .FourthPartLarge{
+
+            .FourthPartLarge {
                 display: none;
             }
-            .FifthPartSmall{
+
+            .FifthPartSmall {
                 display: block;
             }
         }
@@ -109,11 +112,14 @@
                 <div class="col-lg-6">
                     <div style="font-weight: 700; font-style: normal;font-size: 44px;margin-left: 20%;">
                         Hi, I am Shafkat,<br>CSE Student
-                        <p class="GFont" style="font-weight: 100; font-style: normal;font-size: 20px;">Enthusiastic learner of ML and web dev, exploring the intersections of these exciting fields. Open to new opportunities and collaborations. Let's connect and innovate together!</p>
+                        <p class="GFont" style="font-weight: 100; font-style: normal;font-size: 20px;">Enthusiastic
+                            learner of ML and web dev, exploring the intersections of these exciting fields. Open to new
+                            opportunities and collaborations. Let's connect and innovate together!</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div style="margin-left: 50%;"><img class="rounded-circle" src="Shafkat.jpg" alt="" width="65%" ></div>
+                    <div style="margin-left: 50%;"><img class="rounded-circle" src="Shafkat.jpg" alt="" width="65%">
+                    </div>
                 </div>
             </div>
         </div>
@@ -129,9 +135,11 @@
                         Hi, I am Shafkat,<br> &nbsp;&nbsp; &nbsp;CSE Student
                         <p class="GFont"
                             style="font-weight: 100; font-style: normal;font-size: 30px;margin-top: 10%;margin-left: -10%;">
-                            Enthusiastic learner of ML and web dev, exploring <br>&nbsp;the intersections of 
-                            these exciting fields. Open to <br> &nbsp;&nbsp;new opportunities and collaborations. 
-                            Let's  join <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and innovate together!
+                            Enthusiastic learner of ML and web dev, exploring <br>&nbsp;the intersections of
+                            these exciting fields. Open to <br> &nbsp;&nbsp;new opportunities and collaborations.
+                            Let's join <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and
+                            innovate together!
                         </p>
                     </div>
                 </div>
@@ -140,12 +148,16 @@
     </div>
     <div class="ThirdPartLarge" style="margin-left: 10%;">
         <div class="container-lg-12">
-            <button class="btn btn-danger">See Resume</button>
+           <div class="netxtpage"> <a href="cv.html"> <button class="btn btn-danger" onclick="CV()">See Resume </button> </a></div>
         </div>
     </div>
     <div class="ThirdPartSmall" style="text-align: center;margin-top: 4%;">
-        <div class="container-sm-12">
-            <button class="btn btn-danger btn-lg" style="width: 40%; height: 80px;">See Resume</button>
+        <div class="nextpage">
+            <div class="container-sm-12">
+                <a href="cv.html">
+                <button class="btn btn-danger btn-lg" style="width: 40%; height: 80px;" onclick="CV()">See Resume</button>
+            </a>
+            </div>
         </div>
     </div>
     <div class="FourthPartLarge">
@@ -166,18 +178,26 @@
             <span class="GFont " style="font-size: 50px;">Recent projects</span>
         </div>
         <div class="container-sm-11" style="margin-left: 5%;margin-right: 5%;margin-bottom: 5%;">
+            <a href="https://github.com/SyedShafkatulHassan/Web-personal-projects/tree/main/Multiple%20page%20website"
+                        style="text-decoration: none;">
             <div class="card">
                 <div class="card-body">
                     <h2 class="card-title GFont"
-                        style="font-weight: 700; font-size: 44px;margin-left: 2%;margin-right: 2%;">Personal Portfolio Website</h2>
+                        style="font-weight: 700; font-size: 44px;margin-left: 2%;margin-right: 2%;">Personal Portfolio
+                        Website</h2>
                     <p class="card-text Gfont" style="font-size: 44px;margin-left: 2%;margin-right: 2%;">30 May
                         2023&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;HTML,CSS,JS,Bootstrap</p>
-                    <div class="card-text Gfont" style="font-size: 42px;margin-left: 2%;margin-right: 2%;">A portfolio website created using CSS, HTML, Bootstrap and JavaScript offers <br> a dynamic and interactive user experience. 
+                    <div class="card-text Gfont" style="font-size: 42px;margin-left: 2%;margin-right: 2%;">A portfolio
+                        website created using CSS, HTML, Bootstrap and JavaScript offers <br> a dynamic and interactive
+                        user experience.
                         Combining these four technologies allows for greater flexibility and functionality </div>
                 </div>
             </div>
+            </a>
         </div>
         <div class="container-sm-11" style="margin-left: 5%;margin-right: 5%;margin-bottom: 5%;">
+            <a href="https://github.com/SyedShafkatulHassan/Web-personal-projects/tree/main/Personal%20CV"
+            style="text-decoration: none;">
             <div class="card">
                 <div class="card-body">
                     <h2 class="card-title GFont"
@@ -185,68 +205,93 @@
                     <p class="card-text Gfont" style="font-size: 44px;margin-left: 2%;margin-right: 2%;">27 May
                         2023&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;HTML,CSS,Bootstrap</p>
                     <div class="card-text Gfont" style="font-size: 42px;margin-left: 2%;margin-right: 2%;">
-                        A project made using HTML, CSS, and Bootstrap can result in a visually stunning and responsive website. HTML provides the structure,
-                         CSS adds style and design, and Bootstrap offers a powerful framework that 
-                         streamlines the development process.</div>
+                        A project made using HTML, CSS, and Bootstrap can result in a visually stunning and responsive
+                        website. HTML provides the structure,
+                        CSS adds style and design, and Bootstrap offers a powerful framework that
+                        streamlines the development process.</div>
                 </div>
             </div>
+            </a>
         </div>
     </div>
     <div class="FourthPartLarge" style="margin-left: 20%;margin-left: 17%;margin-top: 2%;">
         <div class="container-lg-12">
             <div class="row">
                 <div class="col-lg-5">
-                    <a href="https://github.com/SyedShafkatulHassan/Web-personal-projects/tree/main/Multiple%20page%20website" style="text-decoration: none;">
+                    <a href="https://github.com/SyedShafkatulHassan/Web-personal-projects/tree/main/Multiple%20page%20website"
+                        style="text-decoration: none;">
                         <div class="card">
                             <div class="card-body">
-                                <h2 class="card-title GFont" style="font-weight: 700; font-size: 26px; margin-left: 2%; margin-right: 2%;">Personal Portfolio Website</h2>
-                                <p class="card-text Gfont" style="font-size: 18px; margin-left: 2%; margin-right: 2%;">30 May 2023&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;HTML, CSS, JS, Bootstrap</p>
-                                <div class="card-text Gfont" style="font-size: 18px; margin-left: 2%; margin-right: 2%;">A portfolio website created using CSS, HTML, Bootstrap, and JavaScript which offers a dynamic and interactive user experience. The combination of CSS, HTML, Bootstrap, and JavaScript empowers developers to create highly flexible and functional websites.</div>
+                                <h2 class="card-title GFont"
+                                    style="font-weight: 700; font-size: 26px; margin-left: 2%; margin-right: 2%;">
+                                    Personal Portfolio Website</h2>
+                                <p class="card-text Gfont" style="font-size: 18px; margin-left: 2%; margin-right: 2%;">
+                                    30 May 2023&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;HTML, CSS, JS, Bootstrap
+                                </p>
+                                <div class="card-text Gfont"
+                                    style="font-size: 18px; margin-left: 2%; margin-right: 2%;">A portfolio website
+                                    created using CSS, HTML, Bootstrap, and JavaScript which offers a dynamic and
+                                    interactive user experience. The combination of CSS, HTML, Bootstrap, and JavaScript
+                                    empowers developers to create highly flexible and functional websites.</div>
                             </div>
                         </div>
                     </a>
-                    
+
                 </div>
                 <div class="col-lg-5">
-                    <a href="https://github.com/SyedShafkatulHassan/Web-personal-projects/tree/main/Personal%20CV" style="text-decoration: none;">
+                    <a href="https://github.com/SyedShafkatulHassan/Web-personal-projects/tree/main/Personal%20CV"
+                        style="text-decoration: none;">
                         <div class="card">
                             <div class="card-body">
-                                <h2 class="card-title GFont" style="font-weight: 700; font-size: 26px; margin-left: 2%; margin-right: 2%;">Personal CV</h2>
-                                <p class="card-text Gfont" style="font-size: 18px; margin-left: 2%; margin-right: 2%;">27 May 2023&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;HTML, CSS, Bootstrap</p>
-                                <div class="card-text Gfont" style="font-size: 18px; margin-left: 2%; margin-right: 2%;">A project made using HTML, CSS, and Bootstrap can result in a visually stunning and responsive website. HTML provides the structure, CSS adds style and design, and Bootstrap offers a powerful framework that streamlines the development process.</div>
+                                <h2 class="card-title GFont"
+                                    style="font-weight: 700; font-size: 26px; margin-left: 2%; margin-right: 2%;">
+                                    Personal CV</h2>
+                                <p class="card-text Gfont" style="font-size: 18px; margin-left: 2%; margin-right: 2%;">
+                                    27 May 2023&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;HTML, CSS, Bootstrap</p>
+                                <div class="card-text Gfont"
+                                    style="font-size: 18px; margin-left: 2%; margin-right: 2%;">A project made using
+                                    HTML, CSS, and Bootstrap can result in a visually stunning and responsive website.
+                                    HTML provides the structure, CSS adds style and design, and Bootstrap offers a
+                                    powerful framework that streamlines the development process.</div>
                             </div>
                         </div>
                     </a>
-                    
+
                 </div>
             </div>
         </div>
-        
+
         <div class="container">
             <div class="GFont" style="margin-left: -6%;margin-top: 5%;">Featured works</div>
         </div>
         <div class="cntainer-lg-12" style="margin-top: 3%;margin-left: -19%">
-            <a href="https://github.com/SyedShafkatulHassan/Hostel_Manegement_System" style="text-decoration: none; color: inherit;">
+            <a href="https://github.com/SyedShafkatulHassan/Hostel_Manegement_System"
+                style="text-decoration: none; color: inherit;">
                 <div class="row">
                     <div class="col-lg-3">
-                        <div style="margin-left: 50%; margin-top: 5%;"><img src="Hostel.webp" alt="" width="150%" height="150%"></div>
+                        <div style="margin-left: 50%; margin-top: 5%;"><img src="Hostel.webp" alt="" width="150%"
+                                height="150%"></div>
                     </div>
                     <div class="col-lg-8">
                         <div style="font-weight: 700; font-style: normal; font-size: 30px; margin-left: 10%;">
                             Hostel Management System <br>
-                            <button class="" style="color: white; border-radius: 35%; background-color: rgb(20, 40, 80); height: 35px; width: 65px; font-size: 20px">2022</button>
-                            <span style="color: rgb(134, 149, 164); font-size: 20px; margin-left: 2%;">Java, Java Swing, MySQL</span>
-                            <div style="font-size: 20px; font-weight: 500;">Desktop Application developed using Java Swing (Raw code without drag and drop) and MySQL database.</div>
+                            <button class=""
+                                style="color: white; border-radius: 35%; background-color: rgb(20, 40, 80); height: 35px; width: 65px; font-size: 20px">2022</button>
+                            <span style="color: rgb(134, 149, 164); font-size: 20px; margin-left: 2%;">Java, Java Swing,
+                                MySQL</span>
+                            <div style="font-size: 20px; font-weight: 500;">Desktop Application developed using Java
+                                Swing (Raw code without drag and drop) and MySQL database.</div>
                         </div>
                     </div>
                 </div>
             </a>
-            
-    
+
+
         </div>
         <div class="cntainer-lg-12" style="margin-top: 3%;margin-left: -19%">
-            
-            <a href="https://github.com/SyedShafkatulHassan/Pandamic-vs-We" style="text-decoration: none; color: inherit;">
+
+            <a href="https://github.com/SyedShafkatulHassan/Pandamic-vs-We"
+                style="text-decoration: none; color: inherit;">
                 <div class="row">
                     <div class="col-lg-3">
                         <div style="margin-left: 50%;"><img src="Pandamic.jpg" alt="" width="150%" height="200px"></div>
@@ -254,19 +299,24 @@
                     <div class="col-lg-8">
                         <div style="font-weight: 700; font-style: normal; font-size: 30px; margin-left: 10%;">
                             Pandamic vs We <br>
-                            <button class="" style="color: white; border-radius: 35%; background-color: rgb(20, 40, 80); height: 35px; width: 65px; font-size: 20px; color: white;">2021</button>
-                            <span style="color: rgb(134, 149, 164); font-size: 20px; margin-left: 2%;">Java, Java Swing</span> 
-                            <div style="font-size: 20px; font-weight: 500; color: inherit;">Desktop Application developed using Java Swing (Drag and Drop)</div>
+                            <button class=""
+                                style="color: white; border-radius: 35%; background-color: rgb(20, 40, 80); height: 35px; width: 65px; font-size: 20px; color: white;">2021</button>
+                            <span style="color: rgb(134, 149, 164); font-size: 20px; margin-left: 2%;">Java, Java
+                                Swing</span>
+                            <div style="font-size: 20px; font-weight: 500; color: inherit;">Desktop Application
+                                developed using Java Swing (Drag and Drop)</div>
                         </div>
                     </div>
                 </div>
             </a>
-            
-            
-               
-    
+
+
+
+
         </div>
         <div class="cntainer-lg-12" style="margin-top: 3%;margin-left: -19%">
+            <a href="https://github.com/SyedShafkatulHassan/MY-FIRST-YEAR-2nd-SEMESTER-PROJECT"
+                style="text-decoration: none; color: inherit;">
             <div class="row">
                 <div class="col-lg-3">
                     <div style="margin-left: 50%;"><img src="tour.jpg" alt="" width="150%" height="200px"></div>
@@ -274,39 +324,56 @@
                 <div class="col-lg-8">
                     <div style="font-weight: 700; font-style: normal;font-size: 30px;margin-left: 10%;">
                         Welcome to Bangladesh <br>
-                        <button class="" style="color: white; border-radius: 35%;background-color:rgb(20, 40, 80);height: 35px;width:65px;font-size: 20px">2018</button>
+                        <button class=""
+                            style="color: white; border-radius: 35%;background-color:rgb(20, 40, 80);height: 35px;width:65px;font-size: 20px">2018</button>
                         <span style="color:rgb(134, 149, 164) ;font-size: 20px;margin-left: 2%;">C</span>
-                        <div style="font-size: 20px;font-weight: 500;">consolebased project developed using C . With its simplicity and efficiency, this project brings forth a seamless command-line interface that allows you to interact with it effortlessly</div>
+                        <div style="font-size: 20px;font-weight: 500;">consolebased project developed using C . With its
+                            simplicity and efficiency, this project brings forth a seamless command-line interface that
+                            allows you to interact with it effortlessly</div>
                     </div>
                 </div>
-                
+
             </div>
-    
+           </a>
         </div>
     </div>
-   <div class="FifthPartSmall" style="margin-top: 2%;">
-    <div class="container-sm-12" style="text-align: center;">
-        <span class="GFont " style="font-size: 50px;">Featured works</span>
-    </div>
-    <div class="container-sm-12" style="margin-top: 2%;">
-        <img src="Hostel.webp" alt="" style="width: 80%;height: 80%;margin-left: 10%;">
-    </div>
-    <div class="col-sm-12" style="margin-top: 2%;">
-        <div style="font-weight: 700; font-style: normal;font-size: 60px;margin-left: 10%;">
-            Hostel_Manegement_System <br>
-            <button class="" style="color: white; border-radius: 35%;background-color:rgb(20, 40, 80);height: 75px;width:150px;font-size: 50px">2022</button>
-            <span style="color:rgb(134, 149, 164) ;font-size: 40px;margin-left: 2%;">Dashboard</span>
-            <div style="font-size: 40px;font-weight: 500;">Desktop Application developed using java <br>swing (Raw code without drag and drop) <br>and MYSQL database.</div>
+    <div class="FifthPartSmall" style="margin-top: 2%;">
+        <div class="container-sm-12" style="text-align: center;">
+            <span class="GFont " style="font-size: 50px;">Featured works</span>
         </div>
+        <div>
+        <a href="https://github.com/SyedShafkatulHassan/Hostel_Manegement_System"
+        style="text-decoration: none; color: inherit;">
+        <div class="container-sm-12" style="margin-top: 2%;">
+            <img src="Hostel.webp" alt="" style="width: 80%;height: 80%;margin-left: 10%;">
+        </div>
+        
+        <div class="col-sm-12" style="margin-top: 2%;">
+            <div style="font-weight: 700; font-style: normal;font-size: 60px;margin-left: 10%;">
+                Hostel_Manegement_System <br>
+                <button class=""
+                    style="color: white; border-radius: 35%;background-color:rgb(20, 40, 80);height: 75px;width:150px;font-size: 50px">2022</button>
+                <span style="color:rgb(134, 149, 164) ;font-size: 40px;margin-left: 2%;">Dashboard</span>
+                <div style="font-size: 40px;font-weight: 500;">Desktop Application developed using java <br>swing (Raw
+                    code without drag and drop) <br>and MYSQL database.</div>
+            </div>
+        </div>
+        </a>
     </div>
-   </div>
+    </div>
     <div class="FooterForLarge" style="margin-top: 10%;text-align: center;">
-     <img src="fb.png" alt="">
-     <span style="margin-left: 2%;"><img src="insta.png" alt=""></span>
-     <span style="margin-left: 2%;"><img src="Group.png" alt=""></span>
-     <span style="margin-left: 2%;"><img src="Linkedin.png" alt=""></span>
-     <div style="margin-top: 2%;">Copyright ©2020 All rights reserved </div>
+        <a href="https://www.facebook.com/shafkathassan"><img src="fb.png" alt=""></a>
+        <span style="margin-left: 2%;"><img src="insta.png" alt=""></span>
+        <span style="margin-left: 2%;"><img src="Group.png" alt=""></span>
+        <span style="margin-left: 2%;"><img src="Linkedin.png" alt=""></span>
+        <div style="margin-top: 2%;">Syed Shaflatul Hassan </div>
     </div>
 </body>
-
+   <script>
+      function CV()
+      {
+        print(ok);
+        window.location.href="cv.html";
+      }
+   </script>
 </html>
