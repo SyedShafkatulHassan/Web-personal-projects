@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Temperature Converter</h1>
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-6 col-md-8 col-sm-10">
+                <form>
+                    <div class="mb-3">
+                        <label for="celsius">Celsius</label>
+                        <input type="number" class="form-control" id="celsius" placeholder="Enter Celsius temperature">
+                    </div>
+                    <div class="mb-3">
+                        <label for="kelvin">Kelvin</label>
+                        <input type="number" class="form-control" id="kelvin" placeholder="Enter Kelvin temperature">
+                    </div>
+                    <div class="mb-3">
+                        <label for="fahrenheit">Fahrenheit</label>
+                        <input type="number" class="form-control" id="fahrenheit"
+                            placeholder="Enter Fahrenheit temperature">
+                    </div>
+                    <div class="mb-3">
+                        <label for="output">Converted Temperature</label>
+                        <input type="text" class="form-control" id="output" readonly>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-primary" onclick="convertToKelvin()">Convert to
+                            Kelvin</button>
+                        <button type="button" class="btn btn-primary" onclick="convertToCelsius()">Convert to
+                            Celsius</button>
+                        <button type="button" class="btn btn-primary" onclick="convertToFahrenheit()">Convert to
+                            Fahrenheit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function convertToKelvin() {
+            let celsiusInput = document.getElementById("celsius");
+            let kelvinInput = document.getElementById("kelvin");
+            let fahrenheitInput = document.getElementById("fahrenheit");
+            let outputField = document.getElementById("output");
+            if (celsiusInput.value == "" && kelvinInput.value == "" && fahrenheitInput.value == "") {
+                outputField.value = "Fill atleast one box";
+            }
+            else if (kelvinInput.value == "" && fahrenheitInput.value == "") {
+                let celsius = parseFloat(celsiusInput.value);
+                let kelvin = celsius + 273.15;
+                outputField.value = kelvin.toFixed(5) + " K";
+            }
+            else if (kelvinInput.value == "" && celsiusInput.value == "") {
+                let fahrenheit = parseFloat(fahrenheitInput.value);
+                let k = (fahrenheit + 459.67) * (5 / 9);
+                outputField.value = k.toFixed(5) + " k";
+
+            }
+            else if (fahrenheitInput.value == "" && celsiusInput.value == "") {
+                outputField.value = kelvinInput.value + " K"
+            }
+        }
+
+        function convertToCelsius() {
+            let kelvinInput = document.getElementById("kelvin");
+            let celsiusInput = document.getElementById("celsius");
+            let fahrenheitInput = document.getElementById("fahrenheit");
+            let outputField = document.getElementById("output");
+
+            if (kelvinInput.value === "" && fahrenheitInput.value === "" && celsiusInput.value == "") {
+                outputField.value = "Fill at least one box";
+            } else if (kelvinInput.value === "" && celsiusInput.value === "") {
+                let fahrenheit = parseFloat(fahrenheitInput.value);
+                let celsius = (fahrenheit - 32) * 5 / 9;
+                outputField.value = celsius.toFixed(5) + " °C";
+            } else if (fahrenheitInput.value === "" && celsiusInput.value === "") {
+                let kelvin = parseFloat(kelvinInput.value);
+                let celsius = kelvin - 273.15;
+                outputField.value = celsius.toFixed(5) + " °C";
+            } else if (kelvinInput.value === "") {
+                outputField.value = celsiusInput.value + " °C";
+            }
+        }
+
+        function convertToFahrenheit() {
+            let kelvinInput = document.getElementById("kelvin");
+            let celsiusInput = document.getElementById("celsius");
+            let fahrenheitInput = document.getElementById("fahrenheit");
+            let outputField = document.getElementById("output");
+
+            if (kelvinInput.value === "" && fahrenheitInput.value === "" && celsiusInput.value === "") {
+                outputField.value = "Fill at least one box";
+            } else if (kelvinInput.value === "" && celsiusInput.value === "") {
+                let fahrenheit = parseFloat(fahrenheitInput.value);
+                outputField.value = fahrenheit.toFixed(5) + " °F";
+            } else if (fahrenheitInput.value === "" && celsiusInput.value === "") {
+                let kelvin = parseFloat(kelvinInput.value);
+                let fahrenheit = (kelvin - 273.15) * 9 / 5 + 32;
+                outputField.value = fahrenheit.toFixed(5) + " °F";
+            } else if (kelvinInput.value === "" && fahrenheitInput.value === "") {
+                let celsius = parseFloat(celsiusInput.value);
+                let fahrenheit = (celsius * 9 / 5) + 32;
+                outputField.value = fahrenheit.toFixed(5) + " °F";
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>
